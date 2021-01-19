@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Practica 2</title>
+  </head>
+  <body>
+    <h1>Galería de imágenes</h1>
+    <fieldset>
+      <div id="objeto-galeria">
+        <form class="" action="#" method="post">
+          <p>
+            Titulo Galeria <input id="titulo-galeria" type="text" name="" value=""/>
+            <button id="crear-galeria" type="button" name="button">Crear galeria</button>
+          </p>
+          <p>
+            Nickname <input id="nickname" type="text" name="" value=""/>
+            Email <input id="email" type="text" name="" value=""/>
+            Avatar <input type="file" id="avatar" name="avatar"accept="image/png, image/jpeg">
+            <button id="añadir-autor" type="button" name="button">Añadir Autor</button>
+            <button id="remove-autor" type="button" name="button">Remove Autor</button>
+          </p>
+          <p>
+            Titulo Categoria <input id="titulo-categoria" type="text" name="" value=""/>
+            Descripcion Categoria <input id="descripcion-categoria" type="text" name="" value=""/>
+            <button id="añadir-categoria" type="button" name="button">Añadir Categoria</button>
+            <button id="remove-categoria" type="button" name="button">Remove Categoria</button>
+          </p>
+          <p>
+            Titulo <input id="titulo-imagen" type="text" name="" value=""/>
+            Descripcion <input id="descripcion-imagen" type="text" name="" value=""/>
+            URL <input id="url-imagen" type="text" name="" value=""/>
+            Latitud  <input id="latitud-imagen" type="text" name="" value=""/>
+            Longuitud <input id="longuitud-imagen" type="text" name="" value=""/>
+            <select id="select-autor"><option value="autor">Selecciona autor</option></select>
+            <select id="select-categoria"><option value="categoria">Selecciona categoria</option></select>
+            <select id="select-tipo-imagen">
+              <option value="tipo-imagen">Selecciona tipo</option>
+              <option value="tipo-landscape">Landscape</option>
+              <option value="tipo-portrait">Portrait</option>
+            </select>
+            <button id="añadir-imagen" type="button" name="button">Añadir Imagen</button>
+            <button id="remove-imagen" type="button" name="button">Remove Imagen</button>
+          </p>
+        </form>
+      </div>
+    </fieldset>
+    <button id="get-titulo-galeria" type="button" name="button">Get Titulo Galeria</button>
+    <button id="set-titulo-galeria" type="button" name="button">Set Titulo Galeria</button>
+    <button id="get-cats" type="button" name="button">Get Categorias</button>
+    <button id="get-autores" type="button" name="button">Get Autores</button>
+    <button id="cat-ima" type="button" name="button">Get Imagenes Categoria</button>
+    <button id="aut-ima" type="button" name="button">Get Imagenes Autor</button>
+    <button id="portrait-ima" type="button" name="button">Get Portrait Images</button>
+    <button id="landscape-ima" type="button" name="button">Get Landscape Images</button>
+
+    <div id="result"></div>
+
+    <!-- Los Scripts JS -->
+    <script src="./js/exceptions.js"></script>
+    <script src="./js/gallery.js"></script>
+    <script src="./js/autor.js"></script>
+    <script src="./js/category.js"></script>
+    <script src="./js/coords.js"></script>
+    <script src="./js/image.js"></script>
+    <script src="./js/landscape.js"></script>
+    <script src="./js/portrait.js"></script>
+    <script src="./js/galeriaDom.js"></script>
+    <script src="./js/main.js"></script>
+
+
+  </body>
+</html>
